@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    //Notify User to allow notofocations
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound
+                                                                                    categories:nil]];
     return YES;
 }
 
@@ -26,12 +29,32 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSDate *alarmTime  = [[NSDate date] dateByAddingTimeInterval:5];
+    UIApplication *app = [UIApplication sharedApplication];
+    UILocalNotification *notifyAlarm = [UILocalNotification new];
+
+    if (notifyAlarm) {
+        notifyAlarm.fireDate = alarmTime;
+        notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
+        notifyAlarm.repeatInterval = 2;
+        notifyAlarm.soundName = @".wav";
+        notifyAlarm.alertBody = @"Im in <3 with the CoCo #baconSodaIGotBaconSoda";
+        [app scheduleLocalNotification:notifyAlarm];
+    }
+    //jdkl
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+
+    //So it won't notify the user when they're already in the app
+
+    UIApplication *app = [UIApplication sharedApplication];
+    NSArray *oldNotification = [app scheduledLocalNotifications];
+
+    if ([oldNotification count] > 0) {
+        [app cancelAllLocalNotifications];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

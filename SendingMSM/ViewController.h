@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+#import <iAd/iAd.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate, ADBannerViewDelegate>{
+}
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgImage;
+- (IBAction)btnMessage:(id)sender;
+- (IBAction)btnEmail:(id)sender;
+- (IBAction)btnCall:(id)sender;
 
 @end
 

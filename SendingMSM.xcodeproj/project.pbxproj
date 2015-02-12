@@ -15,6 +15,13 @@
 		500D12661A84737200229ED2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500D12651A84737200229ED2 /* Images.xcassets */; };
 		500D12691A84737200229ED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500D12671A84737200229ED2 /* LaunchScreen.xib */; };
 		500D12751A84737200229ED2 /* SendingMSMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 500D12741A84737200229ED2 /* SendingMSMTests.m */; };
+		500D127F1A8473B100229ED2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500D127E1A8473B100229ED2 /* MessageUI.framework */; };
+		5026AAA91A8C6535003FB1D5 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5026AAA81A8C6535003FB1D5 /* iAd.framework */; };
+		50644E441A8C405400119762 /* grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50644E431A8C405400119762 /* grey.png */; };
+		50644E461A8C4FB500119762 /* message-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 50644E451A8C4FB500119762 /* message-25.png */; };
+		50644E491A8C4FE800119762 /* phone1-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 50644E471A8C4FE800119762 /* phone1-25.png */; };
+		50644E4A1A8C4FE800119762 /* response-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 50644E481A8C4FE800119762 /* response-25.png */; };
+		509352871A8C6E6B00B0A3A1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 509352861A8C6E6B00B0A3A1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,13 @@
 		500D126E1A84737200229ED2 /* SendingMSMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendingMSMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500D12731A84737200229ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		500D12741A84737200229ED2 /* SendingMSMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendingMSMTests.m; sourceTree = "<group>"; };
+		500D127E1A8473B100229ED2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5026AAA81A8C6535003FB1D5 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		50644E431A8C405400119762 /* grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey.png; path = ../grey.png; sourceTree = "<group>"; };
+		50644E451A8C4FB500119762 /* message-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message-25.png"; path = "../message-25.png"; sourceTree = "<group>"; };
+		50644E471A8C4FE800119762 /* phone1-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone1-25.png"; path = "../phone1-25.png"; sourceTree = "<group>"; };
+		50644E481A8C4FE800119762 /* response-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "response-25.png"; path = "../response-25.png"; sourceTree = "<group>"; };
+		509352861A8C6E6B00B0A3A1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5026AAA91A8C6535003FB1D5 /* iAd.framework in Frameworks */,
+				500D127F1A8473B100229ED2 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,9 +81,13 @@
 		500D12491A84737200229ED2 = {
 			isa = PBXGroup;
 			children = (
+				509352861A8C6E6B00B0A3A1 /* Default-568h@2x.png */,
+				5026AAA81A8C6535003FB1D5 /* iAd.framework */,
+				500D127E1A8473B100229ED2 /* MessageUI.framework */,
 				500D12541A84737200229ED2 /* SendingMSM */,
 				500D12711A84737200229ED2 /* SendingMSMTests */,
 				500D12531A84737200229ED2 /* Products */,
+				50644E4B1A8C500000119762 /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +142,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50644E4B1A8C500000119762 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				50644E431A8C405400119762 /* grey.png */,
+				50644E451A8C4FB500119762 /* message-25.png */,
+				50644E471A8C4FE800119762 /* phone1-25.png */,
+				50644E481A8C4FE800119762 /* response-25.png */,
+			);
+			name = Images;
+			path = SendingMSM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +203,7 @@
 				TargetAttributes = {
 					500D12511A84737200229ED2 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 36MM5W3VDB;
 					};
 					500D126D1A84737200229ED2 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -204,7 +237,12 @@
 			files = (
 				500D12641A84737200229ED2 /* Main.storyboard in Resources */,
 				500D12691A84737200229ED2 /* LaunchScreen.xib in Resources */,
+				50644E441A8C405400119762 /* grey.png in Resources */,
+				50644E4A1A8C4FE800119762 /* response-25.png in Resources */,
+				50644E461A8C4FB500119762 /* message-25.png in Resources */,
+				509352871A8C6E6B00B0A3A1 /* Default-568h@2x.png in Resources */,
 				500D12661A84737200229ED2 /* Images.xcassets in Resources */,
+				50644E491A8C4FE800119762 /* phone1-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +385,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SendingMSM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SendingMSM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -416,6 +460,7 @@
 				500D127A1A84737200229ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		500D127B1A84737200229ED2 /* Build configuration list for PBXNativeTarget "SendingMSMTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +469,7 @@
 				500D127D1A84737200229ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

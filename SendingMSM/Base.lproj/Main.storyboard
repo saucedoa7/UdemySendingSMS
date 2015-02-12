@@ -1,25 +1,171 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qos-j1-He6">
+                                <rect key="frame" x="274" y="151" width="78" height="30"/>
+                                <fontDescription key="fontDescription" name="DiwanMishafi" family="Mishafi" pointSize="44"/>
+                                <state key="normal" backgroundImage="message-25.png">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.1960784314" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEmail:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ntc-D7-UPj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-il-2iS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="nmw-KQ-JeK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nmw-KQ-JeK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="nmw-KQ-JeK"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJi-qm-cfd">
+                                <rect key="frame" x="277" y="94" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="yrJ-dp-6Sh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="44"/>
+                                <state key="normal" image="phone1-25.png">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.1960784314" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.68219520840000003" green="0.75129897189999995" blue="0.83842329550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="yrJ-dp-6Sh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="yrJ-dp-6Sh"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="btnCall:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="drB-Ow-y4r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eha-Wx-HeQ">
+                                <rect key="frame" x="277" y="94" width="73" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                <state key="normal" image="response-25.png">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.1960784314" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.68219520840000003" green="0.75129897189999995" blue="0.83842329550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btnMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TbS-fg-KiE"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="AwI-rH-Jo3">
+                                <rect key="frame" x="0.0" y="-50" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="qai-bL-V9R"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bJi-qm-cfd" firstAttribute="leading" secondItem="LJg-il-2iS" secondAttribute="trailing" constant="15" id="3Ra-ZL-5P9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJi-qm-cfd" secondAttribute="trailing" constant="-1" id="Cw6-gw-fsX"/>
+                            <constraint firstItem="AwI-rH-Jo3" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Hbo-pf-5yR"/>
+                            <constraint firstItem="Eha-Wx-HeQ" firstAttribute="trailing" secondItem="Qos-j1-He6" secondAttribute="trailing" id="IXd-6U-Fqo"/>
+                            <constraint firstItem="Qos-j1-He6" firstAttribute="leading" secondItem="LJg-il-2iS" secondAttribute="trailing" constant="14" id="M23-v0-c1T"/>
+                            <constraint firstItem="Qos-j1-He6" firstAttribute="leading" secondItem="Eha-Wx-HeQ" secondAttribute="leading" id="Y4C-Ac-Oa3"/>
+                            <constraint firstItem="LJg-il-2iS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="az3-Rs-8IF"/>
+                            <constraint firstItem="AwI-rH-Jo3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="co8-57-IMR"/>
+                            <constraint firstItem="LJg-il-2iS" firstAttribute="bottom" secondItem="Eha-Wx-HeQ" secondAttribute="bottom" id="h6Z-MG-voR"/>
+                            <constraint firstItem="LJg-il-2iS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="140" id="rxI-cY-ZVO"/>
+                            <constraint firstItem="bJi-qm-cfd" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="287" id="uBw-jR-cQz"/>
+                            <constraint firstItem="LJg-il-2iS" firstAttribute="top" secondItem="Qos-j1-He6" secondAttribute="top" id="wAe-Kj-JyV"/>
+                            <constraint firstItem="Eha-Wx-HeQ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="wwv-8s-fEd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LJg-il-2iS"/>
+                                <exclude reference="bJi-qm-cfd"/>
+                                <exclude reference="AwI-rH-Jo3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Hbo-pf-5yR"/>
+                                <exclude reference="co8-57-IMR"/>
+                                <exclude reference="az3-Rs-8IF"/>
+                                <exclude reference="h6Z-MG-voR"/>
+                                <exclude reference="rxI-cY-ZVO"/>
+                                <exclude reference="wAe-Kj-JyV"/>
+                                <exclude reference="3Ra-ZL-5P9"/>
+                                <exclude reference="Cw6-gw-fsX"/>
+                                <exclude reference="uBw-jR-cQz"/>
+                                <exclude reference="IXd-6U-Fqo"/>
+                                <exclude reference="wwv-8s-fEd"/>
+                                <exclude reference="M23-v0-c1T"/>
+                                <exclude reference="Y4C-Ac-Oa3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LJg-il-2iS"/>
+                                <include reference="bJi-qm-cfd"/>
+                                <include reference="AwI-rH-Jo3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Hbo-pf-5yR"/>
+                                <include reference="co8-57-IMR"/>
+                                <include reference="az3-Rs-8IF"/>
+                                <include reference="h6Z-MG-voR"/>
+                                <include reference="rxI-cY-ZVO"/>
+                                <include reference="wAe-Kj-JyV"/>
+                                <include reference="3Ra-ZL-5P9"/>
+                                <include reference="Cw6-gw-fsX"/>
+                                <include reference="uBw-jR-cQz"/>
+                                <include reference="IXd-6U-Fqo"/>
+                                <include reference="wwv-8s-fEd"/>
+                                <include reference="M23-v0-c1T"/>
+                                <include reference="Y4C-Ac-Oa3"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imgImage" destination="LJg-il-2iS" id="oU3-Na-j5E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="174.75" y="406.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="grey.png" width="691" height="613"/>
+        <image name="message-25.png" width="25" height="25"/>
+        <image name="phone1-25.png" width="25" height="25"/>
+        <image name="response-25.png" width="25" height="25"/>
+    </resources>
 </document>
